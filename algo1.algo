@@ -1,0 +1,17 @@
+ALGORITHM CHECKPOINT_ALGO1
+VAR
+   ch:char;
+   l:integer;
+   nbv:integer:=0;
+   nbw:integer:=0;
+BEGIN
+REPEAT
+    read(ch);
+    l=l+1;
+    IF ((ch="")) THEN
+    nbw=nbw+1;
+    ELSE IF  (ch in['a','o','e','u','i','y','A','O','E','U','I','Y']) then
+    nbv=nbv+1;
+END IF
+UNTIL (ch='.');
+END
